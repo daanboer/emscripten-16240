@@ -1,0 +1,14 @@
+<html>
+  <head>
+    <meta charset="UTF-8" />
+    <!-- Load WebAssembly module -->
+    <script type="text/javascript" src="wasm/emscripten_bug.js"></script>
+  </head>
+  <body>
+    <script>
+      create_module().then((module) => {
+        module.run();
+      });
+    </script>
+  </body>
+</html>
